@@ -1,0 +1,46 @@
+\documentclass{errata}
+
+\hypersetup{
+    pdfauthor={王畅、林肃浩},
+    pdftitle={中国化学奥林匹克竞赛初赛讲义·部分习题补充分析},
+    pdfkeywords={}
+}
+
+\addbibresource{references.bib}
+
+\title{中国化学奥林匹克竞赛初赛讲义 \\ \bfseries 部分习题补充分析}
+\author{王畅 \and 林肃浩}
+\date{\today}
+
+\begin{document}
+    \maketitle
+    本文档的最新版本可访问 \url{https://cchobook.github.io/supplementary_materials/selected_solutions.pdf} 下载。
+
+    以下页码等信息参照浙江大学出版社 2023 年 6 月出版之《中国化学奥林匹克竞赛初赛讲义》，ISBN 为 978-7-308-23901-1。
+
+    \prob{习题 6.34} 由于在合成路线的后续才引入 \ce{CsF}，故 \cf{X} 中无 \ce{Cs}，因此应当是 \cf{A} 的二元氟化物（不能完全排除有 \ce{Xe} 的可能，但先从简单情况考虑）。于是 \cf{X} 是 \ce{\cf{A}F_$n$}，然后尝试 $n=1, 2, \dotsc$，以及 $\omega(\ce{F})=0.2244$ 或者 $1-0.2244$ 的两种可能，可给出下表
+    \begin{table}[H]
+        \centering
+        \begin{tabular}{|c|c|c|c|}
+            \hline
+            $1-0.2244$/$n$ & \cf{A} 的原子量 & 0.2244/$n$ & \cf{A} 的原子量 \\ \hline
+            1 & 5.5 & 1 & 65.7 \\ \hline
+            2 & 11.0 & 2 & 131 \\ \hline
+            3 & 16.5 & 3 & 197 \\ \hline
+            4 & 22.0 & 4 & 263 \\ \hline
+            5 & 27.5 & 5 & 328 \\ \hline
+            6 & 33.0 & 6 & 394 \\ \hline
+            7 & 38.5 & 7 & 460 \\ \hline
+            8 & 44.0 & 8 & 525 \\ \hline
+        \end{tabular}
+    \end{table}
+    表中唯有 197 的数值对应合理元素以及合理价态的化合物 \ce{AuF3}。进一步这说明该路线试图合成 \ce{Au} 的高价态化合物，利用一样的方法可做出 \cf{Z} 为 \ce{CsAuF6}。\cf{Y} 的推理是简单的，因各元素质量分数均已经给出，故直接计算就可给出原子比 $\ce{Xe}:\ce{Au}:\ce{F}=9:8:102$，这恰好可以写为 \ce{8AuF6.9XeF6}。此可以视为原题 \cf{Y} 的正确答案\footnote{但 \ce{AuF6} 是未知的化合物，由此可以断定题目条件不正确。}。不过事实上原题数据有误。原题干误将 \ce{Xe} 的质量分数标注为 \cf{A} 的，按 $\omega(\ce{Xe})=0.3355$ 即可给出原子比 $\ce{Xe}:\ce{Au}:\ce{F}=2:1:17$，故真实的 \cf{Y} 是 \ce{2XeF6.AuF5}，即 \ce{[Xe2F_{11}][AuF6]}。方程式请读者自己补全。
+
+    本题是基于当年 Bartlett 研究稀有气体化学的贡献 \cite{bartlett1972}。
+
+    \renewcommand{\em}{\itshape}
+    \renewcommand*{\bibfont}{\footnotesize}
+    \renewcommand{\refname}{参考文献}
+    \renewcommand{\bibname}{参考文献}
+    \printbibliography
+\end{document}

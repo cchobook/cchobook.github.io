@@ -1,0 +1,86 @@
+\RequirePackage{unicode-math}
+
+\newfontfamily\code{Arial}
+\def\cf#1{\textbf{\code{#1}}}
+
+\defaultfontfeatures{Path=fonts/, Extension=.otf} 
+
+\setmainfont[
+    Extension=.otf,
+    UprightFont=*-Regular,
+    BoldFont=*-Bold,
+    ItalicFont=*-Italic,
+    BoldItalicFont=*-BoldItalic
+]{XITS}
+
+\setmathfont[
+    Extension=.otf,
+    BoldFont=XITSMath-Bold
+]{XITSMath-Regular}
+
+\setsansfont[
+    UprightFont=*-regular,
+    BoldFont=*-bold,
+    ItalicFont=*-italic,
+    BoldItalicFont=*-bolditalic
+]{texgyreheros}
+
+% 若有兼容性问题则应去掉 esint
+\RequirePackage{esint}
+\DeclareSymbolFont{CMlargesymbols}{OMX}{cmex}{m}{n}
+\let\sumop\relax\let\prodop\relax
+\DeclareMathSymbol{\sumop}{\mathop}{CMlargesymbols}{"50}
+\DeclareMathSymbol{\prodop}{\mathop}{CMlargesymbols}{"51}
+
+\defaultfontfeatures{Path=fonts/, Extension=.otf, Ligatures=TeX}
+
+\setCJKmainfont[
+    BoldFont=NotoSerifCJKsc-Bold,
+    ItalicFont=FZKTK,
+    Mapping=fullwidth-stop
+]{FZSSK}
+
+\setCJKsansfont[
+    BoldFont=*,
+    ItalicFont=FZKTK,
+    Mapping=fullwidth-stop
+]{FZHTK}
+
+\setCJKmonofont[
+    BoldFont=*,
+    ItalicFont=FZKTK,
+    Mapping=fullwidth-stop
+]{FZHTK}
+
+\setCJKfamilyfont{kai}[
+    BoldFont=FZHTK,
+    ItalicFont=*,
+    Mapping=fullwidth-stop
+]{FZKTK}
+
+\setCJKfamilyfont{song}[
+    BoldFont=FZHTK,
+    ItalicFont=FZKTK,
+    Mapping=fullwidth-stop
+]{FZSSK}
+
+\setCJKfamilyfont{fangsong}[
+    BoldFont=FZHTK,
+    ItalicFont=FZKTK,
+    Mapping=fullwidth-stop
+]{FZFSK}
+
+\setCJKfamilyfont{hei}[
+    BoldFont=*,
+    ItalicFont=FZKTK,
+    Mapping=fullwidth-stop
+]{FZHTK}
+
+\XeTeXlinebreaklocale "zh"
+\XeTeXlinebreakskip=0pt plus 1pt minus 0.1pt
+
+\newcommand\kaishu{\CJKfamily{kai}}
+\newcommand\songti{\CJKfamily{song}}
+\newcommand\heiti{\CJKfamily{hei}}
+\newcommand\fangsong{\CJKfamily{fangsong}}
+\renewcommand{\em}{\bfseries\CJKfamily{hei}}
