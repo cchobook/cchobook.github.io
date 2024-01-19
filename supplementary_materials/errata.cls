@@ -101,6 +101,7 @@
 }
 
 \AtEndPreamble{
+    \RequirePackage{microtype}
     \RequirePackage{geometry}
     \geometry{
         paper=b5paper,
