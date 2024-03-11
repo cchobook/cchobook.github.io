@@ -91,6 +91,9 @@
 
 \RequirePackage[backend=biber, style=alphabetic, defernumbers=true, hyperref=auto, backref=true, giveninits=true]{biblatex}
 
+\renewcommand{\figurename}{图}
+\renewcommand{\tablename}{表}
+
 \DeclareFieldFormat{postnote}{#1}
 \DefineBibliographyStrings{english}{%
     in={刊于},
